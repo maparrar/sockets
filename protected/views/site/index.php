@@ -19,5 +19,18 @@ the <a href="http://www.yiiframework.com/doc/">documentation</a>.
 Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
 should you have any questions.</p>
 
+<?php
 
-Hola
+//    use Ratchet\Server\IoServer;
+//    use MyApp\Chat;
+
+    //require dirname(__DIR__) . '/vendor/autoload.php';
+    include 'vendor/autoload.php';
+    $server = Ratchet\Server\IoServer::factory(
+        //new Chat(),
+        8080
+    );
+
+    $server->run();
+
+

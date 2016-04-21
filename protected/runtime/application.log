@@ -1,0 +1,205 @@
+2016/04/21 15:50:28 [error] [php] require(/srv/http/example.com/public_html/sockets/protected/views/vendor/autoload.php): failed to open stream: No such file or directory (/srv/http/example.com/public_html/sockets/protected/views/site/index.php:27)
+Stack trace:
+#0 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(869): SiteController->renderFile()
+#2 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(782): SiteController->renderPartial()
+#3 /srv/http/example.com/public_html/sockets/protected/controllers/SiteController.php(32): SiteController->render()
+#4 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(286): SiteController->runAction()
+#7 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(282): SiteController->run()
+#9 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /srv/http/example.com/public_html/sockets/index.php(13): CWebApplication->run()
+REQUEST_URI=/sockets/
+in /srv/http/example.com/public_html/sockets/protected/views/site/index.php (27)
+in /srv/http/example.com/public_html/sockets/protected/views/site/index.php (27)
+in /srv/http/example.com/public_html/sockets/protected/controllers/SiteController.php (32)
+2016/04/21 15:50:40 [error] [exception.Error] Error: Class 'Ratchet\Server\IoServer' not found in /srv/http/example.com/public_html/sockets/protected/views/site/index.php:29
+Stack trace:
+#0 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(126): require()
+#1 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/srv/http/examp...', NULL, true)
+#2 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(869): CBaseController->renderFile('/srv/http/examp...', NULL, true)
+#3 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#4 /srv/http/example.com/public_html/sockets/protected/controllers/SiteController.php(32): CController->render('index')
+#5 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(282): CController->run('')
+#10 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#11 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /srv/http/example.com/public_html/sockets/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/sockets/
+---
+2016/04/21 15:50:53 [error] [php] include(IoServer.php): failed to open stream: No such file or directory (/srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/YiiBase.php:427)
+Stack trace:
+#0 /srv/http/example.com/public_html/sockets/protected/views/site/index.php(29): spl_autoload_call()
+#1 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(126): require()
+#2 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(869): SiteController->renderFile()
+#4 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(782): SiteController->renderPartial()
+#5 /srv/http/example.com/public_html/sockets/protected/controllers/SiteController.php(32): SiteController->render()
+#6 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(286): SiteController->runAction()
+#9 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(282): SiteController->run()
+#11 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /srv/http/example.com/public_html/sockets/index.php(13): CWebApplication->run()
+REQUEST_URI=/sockets/
+in /srv/http/example.com/public_html/sockets/protected/views/site/index.php (29)
+in /srv/http/example.com/public_html/sockets/protected/controllers/SiteController.php (32)
+in /srv/http/example.com/public_html/sockets/index.php (13)
+2016/04/21 15:51:12 [error] [exception.Error] Error: Class 'Ratchet\Server\IoServer' not found in /srv/http/example.com/public_html/sockets/protected/views/site/index.php:29
+Stack trace:
+#0 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(126): require()
+#1 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/srv/http/examp...', NULL, true)
+#2 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(869): CBaseController->renderFile('/srv/http/examp...', NULL, true)
+#3 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#4 /srv/http/example.com/public_html/sockets/protected/controllers/SiteController.php(32): CController->render('index')
+#5 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(282): CController->run('')
+#10 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#11 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /srv/http/example.com/public_html/sockets/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/sockets/
+---
+2016/04/21 15:51:58 [error] [php] include(Chat.php): failed to open stream: No such file or directory (/srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/YiiBase.php:427)
+Stack trace:
+#0 /srv/http/example.com/public_html/sockets/protected/views/site/index.php(30): spl_autoload_call()
+#1 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(126): require()
+#2 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(869): SiteController->renderFile()
+#4 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(782): SiteController->renderPartial()
+#5 /srv/http/example.com/public_html/sockets/protected/controllers/SiteController.php(32): SiteController->render()
+#6 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(286): SiteController->runAction()
+#9 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(282): SiteController->run()
+#11 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /srv/http/example.com/public_html/sockets/index.php(13): CWebApplication->run()
+REQUEST_URI=/sockets/
+in /srv/http/example.com/public_html/sockets/protected/views/site/index.php (30)
+in /srv/http/example.com/public_html/sockets/protected/controllers/SiteController.php (32)
+in /srv/http/example.com/public_html/sockets/index.php (13)
+2016/04/21 15:52:21 [error] [exception.TypeError] TypeError: Argument 1 passed to Ratchet\Server\IoServer::factory() must be an instance of Ratchet\MessageComponentInterface, integer given, called in /srv/http/example.com/public_html/sockets/protected/views/site/index.php on line 31 and defined in /srv/http/example.com/public_html/sockets/vendor/cboden/ratchet/src/Ratchet/Server/IoServer.php:67
+Stack trace:
+#0 /srv/http/example.com/public_html/sockets/protected/views/site/index.php(31): Ratchet\Server\IoServer::factory(8080)
+#1 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(126): require('/srv/http/examp...')
+#2 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/srv/http/examp...', NULL, true)
+#3 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(869): CBaseController->renderFile('/srv/http/examp...', NULL, true)
+#4 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /srv/http/example.com/public_html/sockets/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(282): CController->run('')
+#11 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /srv/http/example.com/public_html/sockets/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sockets/
+---
+2016/04/21 15:52:43 [error] [exception.TypeError] TypeError: Argument 1 passed to Ratchet\Server\IoServer::factory() must be an instance of Ratchet\MessageComponentInterface, integer given, called in /srv/http/example.com/public_html/sockets/protected/views/site/index.php on line 31 and defined in /srv/http/example.com/public_html/sockets/vendor/cboden/ratchet/src/Ratchet/Server/IoServer.php:67
+Stack trace:
+#0 /srv/http/example.com/public_html/sockets/protected/views/site/index.php(31): Ratchet\Server\IoServer::factory(8080)
+#1 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(126): require('/srv/http/examp...')
+#2 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/srv/http/examp...', NULL, true)
+#3 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(869): CBaseController->renderFile('/srv/http/examp...', NULL, true)
+#4 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /srv/http/example.com/public_html/sockets/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(282): CController->run('')
+#11 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /srv/http/example.com/public_html/sockets/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sockets/
+---
+2016/04/21 15:52:57 [error] [exception.Error] Error: Class 'Ratchet\Server\IoServer' not found in /srv/http/example.com/public_html/sockets/protected/views/site/index.php:29
+Stack trace:
+#0 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(126): require()
+#1 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/srv/http/examp...', NULL, true)
+#2 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(869): CBaseController->renderFile('/srv/http/examp...', NULL, true)
+#3 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#4 /srv/http/example.com/public_html/sockets/protected/controllers/SiteController.php(32): CController->render('index')
+#5 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(282): CController->run('')
+#10 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#11 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /srv/http/example.com/public_html/sockets/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/sockets/
+---
+2016/04/21 15:53:03 [error] [exception.Error] Error: Class 'Ratchet\Server\IoServer' not found in /srv/http/example.com/public_html/sockets/protected/views/site/index.php:29
+Stack trace:
+#0 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(126): require()
+#1 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/srv/http/examp...', NULL, true)
+#2 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(869): CBaseController->renderFile('/srv/http/examp...', NULL, true)
+#3 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#4 /srv/http/example.com/public_html/sockets/protected/controllers/SiteController.php(32): CController->render('index')
+#5 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(282): CController->run('')
+#10 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#11 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /srv/http/example.com/public_html/sockets/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/sockets/
+---
+2016/04/21 15:53:15 [error] [exception.Error] Error: Class 'Ratchet\Server\IoServer' not found in /srv/http/example.com/public_html/sockets/protected/views/site/index.php:29
+Stack trace:
+#0 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(126): require()
+#1 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/srv/http/examp...', NULL, true)
+#2 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(869): CBaseController->renderFile('/srv/http/examp...', NULL, true)
+#3 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#4 /srv/http/example.com/public_html/sockets/protected/controllers/SiteController.php(32): CController->render('index')
+#5 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(282): CController->run('')
+#10 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#11 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /srv/http/example.com/public_html/sockets/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/sockets/
+---
+2016/04/21 15:53:29 [error] [exception.TypeError] TypeError: Argument 1 passed to Ratchet\Server\IoServer::factory() must be an instance of Ratchet\MessageComponentInterface, integer given, called in /srv/http/example.com/public_html/sockets/protected/views/site/index.php on line 31 and defined in /srv/http/example.com/public_html/sockets/vendor/cboden/ratchet/src/Ratchet/Server/IoServer.php:67
+Stack trace:
+#0 /srv/http/example.com/public_html/sockets/protected/views/site/index.php(31): Ratchet\Server\IoServer::factory(8080)
+#1 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(126): require('/srv/http/examp...')
+#2 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/srv/http/examp...', NULL, true)
+#3 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(869): CBaseController->renderFile('/srv/http/examp...', NULL, true)
+#4 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /srv/http/example.com/public_html/sockets/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(282): CController->run('')
+#11 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /srv/http/example.com/public_html/sockets/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /srv/http/example.com/public_html/sockets/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sockets/
+---
